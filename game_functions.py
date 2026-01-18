@@ -23,18 +23,18 @@ def process_guess(letter, board, word):
     
     letterfound = False
     for i,wordletter in enumerate(word):
-        print(wordletter,letter)
+        
         if letter == wordletter:
             letterfound = True
-            board[i] == letter 
+            board[i] = letter 
 
-    print(board)
+    
     if letterfound == True:
 
         print(f"Well done! '{letter}' is in the word")
-        return (True,board)
+        return True
 
     print(f"Sorry, '{letter}' is not in the word")
-    return (False,board)
+    return False
     
             
